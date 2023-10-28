@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.submit-btn {
+  margin-top: 1em;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input:nth-of-type(2){
+  margin-top: 1em;
+}
+
+.input label{
+  width: 100px;
+  font-weight: 500;
+}
+
+.input input {
+  height: 40px;
+}
+
