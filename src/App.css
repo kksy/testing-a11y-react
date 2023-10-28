@@ -29,7 +29,11 @@ button:focus-visible {
 }
 
 .submit-btn {
-  margin-top: 1em;
+  margin-top: 1.5em;
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: #FFFFFF;
 }
 
 .input {
