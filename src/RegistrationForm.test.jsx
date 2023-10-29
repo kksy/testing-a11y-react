@@ -1,12 +1,13 @@
-import {render, screen} from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { axe, toHaveNoViolations } from 'jest-axe';
 import userEvent from '@testing-library/user-event'
-import App from './App'
+import RegistrationForm from './RegistrationForm'
 expect.extend(toHaveNoViolations);
 
-describe('Sign Up Form', () => {
+describe('Registration Form', () => {
   it('should be accessible', async () => {
-    const { container } = render(<App/>)
+    const submitHandlerMock = vi.fn()
+    const { container } = render(<RegistrationForm submitHandler={submitHandlerMock} />)
     const results = await axe(container)
   
     expect(results).toHaveNoViolations()
@@ -16,7 +17,7 @@ describe('Sign Up Form', () => {
     const submitHandlerMock = vi.fn()
     const expectedEmail = 'example@email.com'
     const expectedName = 'kylie'
-    render(<App submitHandler={submitHandlerMock} />)
+    render(<RegistrationForm submitHandler={submitHandlerMock} />)
     
     await userEvent.tab()
     expect(screen.getByLabelText(/name/i)).toHaveFocus()
