@@ -1,8 +1,11 @@
-# React + Vite
+# Testing Accessibility in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project shows an example on how you can incorporate accessibility tests while developing a React application. It uses a form as an example.
 
-Currently, two official plugins are available:
+The application is generated with [Vite](https://vitejs.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tech Stack
+- [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Jest Axe](https://github.com/NickColley/jest-axe)
+
+
