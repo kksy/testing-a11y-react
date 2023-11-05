@@ -4,8 +4,11 @@ This project shows an example on how you can incorporate accessibility tests whi
 
 The application is generated with [Vite](https://vitejs.dev/)
 
-# Tech Stack
+## Tech Stack
 - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Jest Axe](https://github.com/NickColley/jest-axe)
+
+## Slides
+This example was used in a React meetup. The [slides](/slides/) have more information for further reading.
 
 
